@@ -1,0 +1,128 @@
+# Netlify Configuration for Café de la Esquina
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  # No build step needed - pure static site
+  command = "echo 'No build step required'"
+  publish = "."
+
+# Pretty URLs and redirects handled by _redirects file
+# But we can also configure here for clarity
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/carta.html"
+  to = "/carta"
+  status = 301
+
+[[redirects]]
+  from = "/nosotros.html"
+  to = "/nosotros"
+  status = 301
+
+[[redirects]]
+  from = "/contacto.html"
+  to = "/contacto"
+  status = 301
+
+[[redirects]]
+  from = "/carta"
+  to = "/carta.html"
+  status = 200
+
+[[redirects]]
+  from = "/nosotros"
+  to = "/nosotros.html"
+  status = 200
+
+[[redirects]]
+  from = "/contacto"
+  to = "/contacto.html"
+  status = 200
+
+# Legacy redirects
+[[redirects]]
+  from = "/menu"
+  to = "/carta"
+  status = 301
+
+[[redirects]]
+  from = "/about"
+  to = "/nosotros"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/contacto"
+  status = 301
+
+# Headers for security and performance
+# (Also defined in _headers file - Netlify merges both)
+
+[[headers]]
+  for = "/assets/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Content-Encoding = "br, gzip"
+
+[[headers]]
+  for = "/assets/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Content-Encoding = "br, gzip"
+
+[[headers]]
+  for = "/assets/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Content-Encoding = "br, gzip"
+
+[[headers]]
+  for = "/assets/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+  for = "*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    # CSP allowing Google Fonts, Maps, WhatsApp
+    Content-Security-Policy = "default-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://www.google.com https://maps.google.com https://wa.me; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://wa.me; frame-src https://www.google.com https://maps.google.com;"
+
+# Compression
+[functions]
+  # Not used in this static site, but good to have
+  node_bundler = "esbuild"
+
+# Edge Functions (optional - for future dynamic features)
+# [edge_functions]
+#   path = "edge-functions/"
+
+# Build plugins (optional)
+# [[plugins]]
+#   package = "@netlify/plugin-lighthouse"
+
+# Environment variables (for future use)
+# [build.environment]
+#   NODE_VERSION = "20"
+
+# Deploy settings
+[deploy]
+  # Publish directory is root (.)
+  # No additional config needed

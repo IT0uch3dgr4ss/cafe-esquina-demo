@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Café de la Esquina - Tu pausa de cada día en Canillejas. Café de especialidad, pasteles caseros y buen rollo. Abierto 7:30-21:00.">
+  <meta name="theme-color" content="#6B4226">
+  <title>Café de la Esquina | Tu pausa de cada día en Canillejas</title>
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cafe-esquina-demo.netlify.app/">
+  <meta property="og:title" content="Café de la Esquina | Tu pausa de cada día">
+  <meta property="og:description" content="Café de especialidad, pasteles caseros y la mejor compañía en Canillejas. Abrimos a las 7:30 para tu primer café.">
+  <meta property="og:image" content="https://cafe-esquina-demo.netlify.app/assets/images/og-home.webp">
+  <meta property="og:site_name" content="Café de la Esquina">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Café de la Esquina | Tu pausa de cada día">
+  <meta name="twitter:description" content="Café de especialidad, pasteles caseros y la mejor compañía en Canillejas.">
+  <meta name="twitter:image" content="https://cafe-esquina-demo.netlify.app/assets/images/og-home.webp">
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Café de la Esquina",
+    "description": "Café de especialidad, pasteles caseros y buen rollo en Canillejas, Madrid",
+    "url": "https://cafe-esquina-demo.netlify.app/",
+    "telephone": "+34-600-000-000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C/ Alcalá 123",
+      "addressLocality": "Madrid",
+      "addressRegion": "Madrid",
+      "postalCode": "28022",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.4333,
+      "longitude": -3.6167
+    },
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "07:30", "closes": "21:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "07:30", "closes": "22:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:30", "closes": "22:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "20:00"}
+    ],
+    "menu": "https://cafe-esquina-demo.netlify.app/carta.html",
+    "priceRange": "€€",
+    "paymentAccepted": "Cash, Credit Card, Mobile Payment",
+    "currenciesAccepted": "EUR",
+    "image": "https://cafe-esquina-demo.netlify.app/assets/images/hero-interior.webp",
+    "sameAs": [
+      "https://instagram.com/cafedelaesquina",
+      "https://maps.google.com/?cid=123456789"
+    ]
+  }
+  </script>
+
+  <!-- Preload critical fonts -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="page-home">
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="header__inner container">
+      <a href="/" class="header__logo" aria-label="Café de la Esquina - Inicio">
+        <svg class="header__logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="14" stroke="#6B4226" stroke-width="2"/>
+          <path d="M16 6v10M16 16v10M11 16h10" stroke="#6B4226" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="header__logo-text">Café de la Esquina</span>
+      </a>
+
+      <nav class="header__nav" role="navigation" aria-label="Navegación principal">
+        <ul class="header__nav-list">
+          <li><a href="/" class="header__nav-link" aria-current="page">Inicio</a></li>
+          <li><a href="/carta.html" class="header__nav-link">Carta</a></li>
+          <li><a href="/nosotros.html" class="header__nav-link">Nosotros</a></li>
+          <li><a href="/contacto.html" class="header__nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="https://wa.me/34600000000?text=Hola%21%20Quiero%20hacer%20un%20pedido" class="btn btn--accent header__btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp: Pedir o reservar">
+          <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          <span>WhatsApp</span>
+        </a>
+        <button class="header__hamburger" aria-expanded="false" aria-controls="drawer" aria-label="Abrir menú">
+          <span class="header__hamburger-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menú móvil">
+    <div class="drawer__header">
+      <h2 class="drawer__title">Menú</h2>
+      <button class="drawer__close" aria-label="Cerrar menú">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <nav class="drawer__nav" role="navigation" aria-label="Navegación móvil">
+      <ul class="drawer__nav-list">
+        <li><a href="/" class="drawer__nav-link" aria-current="page">Inicio</a></li>
+        <li><a href="/carta.html" class="drawer__nav-link">Carta</a></li>
+        <li><a href="/nosotros.html" class="drawer__nav-link">Nosotros</a></li>
+        <li><a href="/contacto.html" class="drawer__nav-link">Contacto</a></li>
+      </ul>
+      <div class="drawer__info">
+        <div class="drawer__info-item">
+          <svg class="drawer__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span>C/ Alcalá 123, 28022 Madrid (Canillejas)</span>
+        </div>
+        <div class="drawer__info-item">
+          <svg class="drawer__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <span>Lun-Vie 7:30-21:00 · Sáb 8:30-22:00 · Dom 9:00-20:00</span>
+        </div>
+      </div>
+      <div class="drawer__actions">
+        <a href="https://wa.me/34600000000?text=Hola%21%20Quiero%20hacer%20un%20pedido" class="btn btn--accent btn--full" target="_blank" rel="noopener noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          <span>Escribir por WhatsApp</span>
+        </a>
+        <a href="/carta.html" class="btn btn--outline btn--full">Ver carta completa</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="main" role="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg">
+        <picture>
+          <source srcset="assets/images/hero-interior.webp" type="image/webp">
+          <img class="hero__image" src="assets/images/hero-interior.jpg" alt="Interior acogedor de Café de la Esquina con luz natural, mesas de madera y barra de café" loading="eager" fetchpriority="high" width="1200" height="800">
+        </picture>
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__content container">
+        <span class="hero__badge">☕ Café de especialidad en Canillejas</span>
+        <h1 class="hero__title text-h1" id="hero-title">Tu pausa de cada día</h1>
+        <p class="hero__subtitle text-body-lg">Café de tueste natural, pasteles caseros y la mejor compañía. Abrimos a las 7:30 para tu primer café.</p>
+        <div class="hero__actions">
+          <a href="/carta.html" class="btn btn--primary btn--lg">Ver carta</a>
+          <a href="https://wa.me/34600000000?text=Hola%21%20Quiero%20hacer%20un%20pedido" class="btn btn--accent btn--lg" target="_blank" rel="noopener noreferrer">
+            <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            <span>Escríbenos por WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features / 3 Pillars -->
+    <section class="features section" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section-header" style="text-align:center;margin-bottom:var(--space-12);">
+          <h2 class="text-h2" id="features-title">Lo que nos hace especiales</h2>
+        </header>
+        <div class="features__grid grid">
+          <article class="feature">
+            <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+            <h3 class="feature__title">Producto local</h3>
+            <p class="feature__description">Pan de horno de leña, leche de ganadería cercana, fruta de temporada. Lo de aquí sabe mejor.</p>
+          </article>
+          <article class="feature">
+            <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+            <h3 class="feature__title">Café de especialidad</h3>
+            <p class="feature__description">Tueste natural, grano trazado, baristas formados. Cada taza cuenta una historia.</p>
+          </article>
+          <article class="feature">
+            <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            <h3 class="feature__title">Hecho con tiempo</h3>
+            <p class="feature__description">Masa madre 24h, café filtrado en frío 18h, pasteles del día. Lo bueno no tiene prisa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlight Menu -->
+    <section class="highlight-menu section" aria-labelledby="highlight-title">
+      <div class="container">
+        <header class="highlight-menu__header">
+          <h2 class="highlight-menu__title text-h2" id="highlight-title">⭐ Lo más pedido</h2>
+          <a href="/carta.html" class="highlight-menu__cta">Ver carta completa →</a>
+        </header>
+        <div class="highlight-menu__list" id="highlight-menu" role="list" aria-label="Platos destacados">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Bar (Mobile) -->
+    <div class="location-bar location-bar--mobile" role="contentinfo" aria-label="Información de ubicación y contacto rápido">
+      <a href="https://maps.app.goo.gl/XXXX" class="location-bar__item" target="_blank" rel="noopener noreferrer" aria-label="Ver en Google Maps">
+        <svg class="location-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        <span class="location-bar__label">Ubicación</span>
+        <span class="location-bar__text">Canillejas</span>
+      </a>
+      <div class="location-bar__item" id="location-status" aria-live="polite">
+        <svg class="location-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <span class="location-bar__label">Estado</span>
+        <span class="location-bar__status location-bar__status--open" id="location-status-text">Abierto ahora</span>
+      </div>
+      <a href="https://wa.me/34600000000?text=Hola%21%20Quiero%20hacer%20un%20pedido" class="location-bar__item location-bar__item--whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp: Pedir o reservar">
+        <svg class="location-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        <span class="location-bar__label">WhatsApp</span>
+      </a>
+    </div>
+
+    <!-- Testimonial -->
+    <section class="testimonial section" aria-labelledby="testimonial-title">
+      <div class="container">
+        <blockquote class="testimonial__card">
+          <p class="testimonial__quote">"El mejor cortado del barrio. Y la tarta de queso... de otro planeta. Vengo cada mañana antes de currar."</p>
+          <footer class="testimonial__author">
+            <img class="testimonial__avatar" src="assets/images/avatar-testimonial.webp" alt="" loading="lazy" width="48" height="48">
+            <div>
+              <cite class="testimonial__name">María G., vecina de Canillejas</cite>
+              <span class="testimonial__role">Clienta habitual desde 2022</span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__main container">
+      <div class="footer__brand">
+        <a href="/" class="footer__logo" aria-label="Café de la Esquina - Inicio">
+          <svg class="footer__logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="14" stroke="#6B4226" stroke-width="2"/><path d="M16 6v10M16 16v10M11 16h10" stroke="#6B4226" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="footer__logo-text">Café de la Esquina</span>
+        </a>
+        <p class="footer__tagline">Tu pausa de cada día en Canillejas. Café de especialidad, pasteles caseros y buen rollo.</p>
+        <div class="footer__social" role="list" aria-label="Redes sociales">
+          <a href="https://instagram.com/cafedelaesquina" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg class="footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="https://tiktok.com/@cafedelaesquina" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg class="footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 8.85V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v4.85M12 4v6M8 16v5a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-5"></path></svg>
+          </a>
+          <a href="https://maps.app.goo.gl/XXXX" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Google Maps">
+            <svg class="footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__columns">
+        <nav class="footer__column" aria-label="Enlaces principales">
+          <h3 class="footer__column-title">Enlaces</h3>
+          <ul class="footer__links">
+            <li><a href="/" class="footer__link">Inicio</a></li>
+            <li><a href="/carta.html" class="footer__link">Carta</a></li>
+            <li><a href="/nosotros.html" class="footer__link">Nosotros</a></li>
+            <li><a href="/contacto.html" class="footer__link">Contacto</a></li>
+            <li><a href="/blog.html" class="footer__link">Blog / Noticias</a></li>
+            <li><a href="/trabaja.html" class="footer__link">Trabaja con nosotros</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__column" aria-label="Información legal">
+          <h3 class="footer__column-title">Legal</h3>
+          <ul class="footer__links">
+            <li><a href="/aviso-legal.html" class="footer__link">Aviso legal</a></li>
+            <li><a href="/privacidad.html" class="footer__link">Privacidad</a></li>
+            <li><a href="/cookies.html" class="footer__link">Cookies</a></li>
+            <li><a href="/accesibilidad.html" class="footer__link">Accesibilidad</a></li>
+            <li><a href="/hoja-reclamaciones.html" class="footer__link">Hoja de reclamaciones</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__column">
+          <h3 class="footer__column-title">Ven a vernos</h3>
+          <address class="footer__info" style="font-style: normal;">
+            <p>C/ Alcalá 123, 28022 Madrid (Canillejas)</p>
+            <p><a href="tel:+34600000000" class="footer__info-link">📞 +34 600 000 000</a></p>
+            <p><a href="mailto:hola@cafedelaesquina.es" class="footer__info-link">✉️ hola@cafedelaesquina.es</a></p>
+            <p>Lun-Vie 7:30-21:00 · Sáb 8:30-22:00 · Dom 9:00-20:00</p>
+            <a href="https://maps.app.goo.gl/XXXX" class="footer__info-link" target="_blank" rel="noopener noreferrer">📍 Ver en Maps →</a>
+          </address>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy; 2025 Café de la Esquina. Todos los derechos reservados.</p>
+      <p class="footer__badge">Hecho con ☕ por vecinos de Canillejas</p>
+    </div>
+  </footer>
+
+  <!-- Cart (shared) -->
+  <aside class="cart" id="cart" role="dialog" aria-modal="true" aria-label="Tu pedido" hidden>
+    <div class="cart__header">
+      <h2 class="cart__title">Tu pedido</h2>
+      <button class="cart__close" aria-label="Cerrar carrito"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+    </div>
+    <div class="cart__empty hidden">Tu carrito está vacío... pero la barra te espera ☕</div>
+    <div class="cart__items" role="list" aria-label="Items del pedido"></div>
+    <div class="cart__summary hidden">
+      <div class="cart__total"><span class="cart__total-label">Total</span><span class="cart__total-amount text-price">0,00&nbsp;€</span></div>
+      <div class="cart__actions">
+        <button class="btn btn--accent btn--full btn--lg" id="cart-whatsapp">Pedir por WhatsApp</button>
+        <button class="btn btn--ghost btn--full" id="cart-clear">Vaciar carrito</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Scripts -->
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Carta completa de Café de la Esquina. Cafés de especialidad, tés, bebidas frías, dulces caseros y salados. Filtra por categoría, alérgenos o dieta. Pide por WhatsApp.">
+  <meta name="theme-color" content="#6B4226">
+  <title>Carta | Café de la Esquina</title>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cafe-esquina-demo.netlify.app/carta.html">
+  <meta property="og:title" content="Carta completa | Café de la Esquina">
+  <meta property="og:description" content="Cafés de especialidad, tés, bebidas frías, dulces caseros y salados. Filtra por categoría y pide por WhatsApp.">
+  <meta property="og:image" content="https://cafe-esquina-demo.netlify.app/assets/images/og-carta.webp">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Carta completa | Café de la Esquina">
+  <meta name="twitter:description" content="Cafés de especialidad, tés, bebidas frías, dulces caseros y salados.">
+
+  <!-- Schema.org Menu -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Menu",
+    "name": "Carta Café de la Esquina",
+    "description": "Cafés de especialidad, tés, bebidas frías, dulces caseros y salados",
+    "hasMenuSection": [
+      {"@type": "MenuSection", "name": "Cafés", "description": "Cafés de especialidad tueste natural"},
+      {"@type": "MenuSection", "name": "Tés e Infusiones", "description": "Tés premium e infusiones sin teína"},
+      {"@type": "MenuSection", "name": "Bebidas Frías", "description": "Café helado, frappés, tés fríos, batidos"},
+      {"@type": "MenuSection", "name": "Dulces", "description": "Pasteles caseros, croissants, cookies"},
+      {"@type": "MenuSection", "name": "Salados", "description": "Tostadas, bocadillos, ensaladas"},
+      {"@type": "MenuSection", "name": "Especiales del Día", "description": "Plato casero cambiante y brunch fines de semana"}
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="page-carta">
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="header__inner container">
+      <a href="/" class="header__logo" aria-label="Café de la Esquina - Inicio">
+        <svg class="header__logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="14" stroke="#6B4226" stroke-width="2"/>
+          <path d="M16 6v10M16 16v10M11 16h10" stroke="#6B4226" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="header__logo-text">Café de la Esquina</span>
+      </a>
+
+      <nav class="header__nav" role="navigation" aria-label="Navegación principal">
+        <ul class="header__nav-list">
+          <li><a href="/" class="header__nav-link">Inicio</a></li>
+          <li><a href="/carta.html" class="header__nav-link" aria-current="page">Carta</a></li>
+          <li><a href="/nosotros.html" class="header__nav-link">Nosotros</a></li>
+          <li><a href="/contacto.html" class="header__nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="https://wa.me/34600000000?text=Hola%21%20Quiero%20hacer%20un%20pedido" class="btn btn--accent header__btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp: Pedir o reservar">
+          <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          <span>WhatsApp</span>
+        </a>
+        <button class="header__hamburger" aria-expanded="false" aria-controls="drawer" aria-label="Abrir menú">
+          <span class="header__hamburger-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menú móvil">
+    <div class="drawer__header">
+      <h2 class="drawer__title">Menú</h2>
+      <button class="drawer__close" aria-label="Cerrar menú"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+    </div>
+    <nav class="drawer__nav" role="navigation" aria-label="Navegación móvil">
+      <ul class="drawer__nav-list">
+        <li><a href="/" class="drawer__nav-link">Inicio</a></li>
+        <li><a href="/carta.html" class="drawer__nav-link" aria-current="page">Carta</a></li>
+        <li><a href="/nosotros.html" class="drawer__nav-link">Nosotros</a></li>
+        <li><a href="/contacto.html" class="drawer__nav-link">Contacto</a></li>
+      </ul>
+      <div class="drawer__info">
+        <div class="drawer__info-item"><svg class="drawer__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg><span>C/ Alcalá 123, 28022 Madrid (Canillejas)</span></div>
+        <div class="drawer__info-item"><svg class="drawer__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><span>Lun-Vie 7:30-21:00 · Sáb 8:30-22:00 · Dom 9:00-20:00</span></div>
+      </div>
+      <div class="drawer__actions">
+        <a href="https://wa.me/34600000000?text=Hola%21%20Quiero%20hacer%20un%20pedido" class="btn btn--accent btn--full" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg><span>Escribir por WhatsApp</span></a>
+        <a href="/carta.html" class="btn btn--outline btn--full">Ver carta completa</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="main" role="main">
+    <!-- Page Header -->
+    <header class="menu-header">
+      <div class="container">
+        <h1 class="menu-header__title text-h2">Nuestra carta</h1>
+        <p class="menu-header__subtitle text-body-lg">Todo hecho con tiempo y cariño. ¿Tienes alergias? Pregúntanos, te informamos de todo.</p>
+      </div>
+    </header>
+
+    <!-- Filters -->
+    <div class="menu-filters" role="search" aria-label="Filtros de la carta">
+      <div class="container">
+        <div class="menu-filters__search">
+          <label for="menu-search" class="visually-hidden">Buscar en la carta</label>
+          <input type="search" id="menu-search" class="menu-filters__input form-input" placeholder="Buscar café, croissant, tarta..." aria-describedby="search-hint">
+          <span id="search-hint" class="visually-hidden">Escribe para filtrar por nombre o descripción</span>
+        </div>
+
+        <div class="menu-filters__categories" role="tablist" aria-label="Categorías">
+          <button class="menu-filters__category menu-filters__category--active" role="tab" aria-selected="true" data-category="all" aria-controls="menu-panel">
+            <span class="menu-filters__category-icon" aria-hidden="true">📋</span> Todos
+          </button>
+          <button class="menu-filters__category" role="tab" aria-selected="false" data-category="cafes" aria-controls="menu-panel">
+            <span class="menu-filters__category-icon" aria-hidden="true">☕</span> Cafés
+          </button>
+          <button class="menu-filters__category" role="tab" aria-selected="false" data-category="tes" aria-controls="menu-panel">
+            <span class="menu-filters__category-icon" aria-hidden="true">🍵</span> Tés
+          </button>
+          <button class="menu-filters__category" role="tab" aria-selected="false" data-category="frios" aria-controls="menu-panel">
+            <span class="menu-filters__category-icon" aria-hidden="true">❄️</span> Fríos
+          </button>
+          <button class="menu-filters__category" role="tab" aria-selected="false" data-category="dulces" aria-controls="menu-panel">
+            <span class="menu-filters__category-icon" aria-hidden="true">🍰</span> Dulces
+          </button>
+          <button class="menu-filters__category" role="tab" aria-selected="false" data-category="salados" aria-controls="menu-panel">
+            <span class="menu-filters__category-icon" aria-hidden="true">🥪</span> Salados
+          </button>
+          <button class="menu-filters__category" role="tab" aria-selected="false" data-category="especiales" aria-controls="menu-panel">
+            <span class="menu-filters__category-icon" aria-hidden="true">🔥</span> Especiales
+          </button>
+        </div>
+
+        <!-- Advanced Filters Toggle -->
+        <button class="menu-filters__more" aria-expanded="false" aria-controls="advanced-filters" id="filters-toggle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+          <span>Más filtros</span>
+          <svg class="menu-filters__more-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+
+        <!-- Advanced Filters Panel -->
+        <div class="menu-filters__advanced" id="advanced-filters" role="region" aria-label="Filtros avanzados" hidden>
+          <div class="menu-filters__advanced-group">
+            <span class="menu-filters__advanced-label">Alérgenos</span>
+            <div class="menu-filters__chips" role="group" aria-label="Filtrar por alérgenos">
+              <button class="menu-filters__chip" data-filter="allergen" data-value="gluten" role="checkbox" aria-checked="false">🌾 Gluten</button>
+              <button class="menu-filters__chip" data-filter="allergen" data-value="lactosa" role="checkbox" aria-checked="false">🥛 Lácteos</button>
+              <button class="menu-filters__chip" data-filter="allergen" data-value="frutos-secos" role="checkbox" aria-checked="false">🥜 Frutos secos</button>
+              <button class="menu-filters__chip" data-filter="allergen" data-value="huevo" role="checkbox" aria-checked="false">🥚 Huevo</button>
+              <button class="menu-filters__chip" data-filter="allergen" data-value="soja" role="checkbox" aria-checked="false">🫘 Soja</button>
+              <button class="menu-filters__chip" data-filter="allergen" data-value="sin-alergenos" role="checkbox" aria-checked="false">✅ Sin alérgenos</button>
+            </div>
+          </div>
+          <div class="menu-filters__advanced-group">
+            <span class="menu-filters__advanced-label">Dietas</span>
+            <div class="menu-filters__chips" role="group" aria-label="Filtrar por dieta">
+              <button class="menu-filters__chip" data-filter="dietary" data-value="vegan" role="checkbox" aria-checked="false">🌱 Vegano</button>
+              <button class="menu-filters__chip" data-filter="dietary" data-value="vegetarian" role="checkbox" aria-checked="false">🥗 Vegetariano</button>
+              <button class="menu-filters__chip" data-filter="dietary" data-value="sin-azucar" role="checkbox" aria-checked="false">🚫 Sin azúcar</button>
+              <button class="menu-filters__chip" data-filter="dietary" data-value="gluten-free" role="checkbox" aria-checked="false">🌾 Sin gluten</button>
+            </div>
+          </div>
+          <div class="menu-filters__advanced-group">
+            <label class="form-checkbox">
+              <input type="checkbox" id="filter-favorites" class="form-input" role="checkbox">
+              <span class="form-checkbox__check"></span>
+              <span>Solo mis favoritos ❤️</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- View Toggle (Desktop) -->
+    <div class="menu-view-toggle" role="group" aria-label="Cambiar vista" hidden>
+      <button class="menu-view-toggle__btn menu-view-toggle__btn--active" data-view="grid" aria-pressed="true" aria-label="Vista cuadrícula">
+        <svg class="menu-view-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect></svg>
+      </button>
+      <button class="menu-view-toggle__btn" data-view="list" aria-pressed="false" aria-label="Vista lista">
+        <svg class="menu-view-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <!-- Menu Content -->
+    <section class="menu-content" id="menu-panel" aria-label="Platos de la carta">
+      <div class="container">
+        <div class="menu-grid" id="menu-grid" role="list">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Location Bar (Mobile) -->
+  <div class="location-bar location-bar--mobile" role="contentinfo" aria-label="Información de ubicación y contacto rápido">
+    <a href="https://maps.app.goo.gl/XXXX" class="location-bar__item" target="_blank" rel="noopener noreferrer" aria-label="Ver en Google Maps">
+      <svg class="location-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+      <span class="location-bar__label">Ubicación</span>
+      <span class="location-bar__text">Canillejas</span>
+    </a>
+    <div class="location-bar__item" id="location-status" aria-live="polite">
+      <svg class="location-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+      <span class="location-bar__label">Estado</span>
+      <span class="location-bar__status location-bar__status--open" id="location-status-text">Abierto ahora</span>
+    </div>
+    <a href="https://wa.me/34600000000?text=Hola%21%20Quiero%20hacer%20un%20pedido" class="location-bar__item location-bar__item--whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp: Pedir o reservar">
+      <svg class="location-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+      <span class="location-bar__label">WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- Cart -->
+  <aside class="cart" id="cart" role="dialog" aria-modal="true" aria-label="Tu pedido" hidden>
+    <div class="cart__header">
+      <h2 class="cart__title">Tu pedido</h2>
+      <button class="cart__close" aria-label="Cerrar carrito"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+    </div>
+    <div class="cart__empty">Tu carrito está vacío... pero la barra te espera ☕</div>
+    <div class="cart__items" role="list" aria-label="Items del pedido"></div>
+    <div class="cart__summary hidden">
+      <div class="cart__total"><span class="cart__total-label">Total</span><span class="cart__total-amount text-price">0,00&nbsp;€</span></div>
+      <div class="cart__actions">
+        <button class="btn btn--accent btn--full btn--lg" id="cart-whatsapp">Pedir por WhatsApp</button>
+        <button class="btn btn--ghost btn--full" id="cart-clear">Vaciar carrito</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__main container">
+      <div class="footer__brand">
+        <a href="/" class="footer__logo" aria-label="Café de la Esquina - Inicio">
+          <svg class="footer__logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="14" stroke="#6B4226" stroke-width="2"/><path d="M16 6v10M16 16v10M11 16h10" stroke="#6B4226" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="footer__logo-text">Café de la Esquina</span>
+        </a>
+        <p class="footer__tagline">Tu pausa de cada día en Canillejas. Café de especialidad, pasteles caseros y buen rollo.</p>
+        <div class="footer__social" role="list" aria-label="Redes sociales">
+          <a href="https://instagram.com/cafedelaesquina" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+          <a href="https://tiktok.com/@cafedelaesquina" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg class="footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 8.85V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v4.85M12 4v6M8 16v5a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-5"></path></svg></a>
+          <a href="https://maps.app.goo.gl/XXXX" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Google Maps"><svg class="footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a>
+        </div>
+      </div>
+
+      <div class="footer__columns">
+        <nav class="footer__column" aria-label="Enlaces principales">
+          <h3 class="footer__column-title">Enlaces</h3>
+          <ul class="footer__links">
+            <li><a href="/" class="footer__link">Inicio</a></li>
+            <li><a href="/carta.html" class="footer__link">Carta</a></li>
+            <li><a href="/nosotros.html" class="footer__link">Nosotros</a></li>
+            <li><a href="/contacto.html" class="footer__link">Contacto</a></li>
+            <li><a href="/blog.html" class="footer__link">Blog / Noticias</a></li>
+            <li><a href="/trabaja.html" class="footer__link">Trabaja con nosotros</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__column" aria-label="Información legal">
+          <h3 class="footer__column-title">Legal</h3>
+          <ul class="footer__links">
+            <li><a href="/aviso-legal.html" class="footer__link">Aviso legal</a></li>
+            <li><a href="/privacidad.html" class="footer__link">Privacidad</a></li>
+            <li><a href="/cookies.html" class="footer__link">Cookies</a></li>
+            <li><a href="/accesibilidad.html" class="footer__link">Accesibilidad</a></li>
+            <li><a href="/hoja-reclamaciones.html" class="footer__link">Hoja de reclamaciones</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__column">
+          <h3 class="footer__column-title">Ven a vernos</h3>
+          <address class="footer__info" style="font-style: normal;">
+            <p>C/ Alcalá 123, 28022 Madrid (Canillejas)</p>
+            <p><a href="tel:+34600000000" class="footer__info-link">📞 +34 600 000 000</a></p>
+            <p><a href="mailto:hola@cafedelaesquina.es" class="footer__info-link">✉️ hola@cafedelaesquina.es</a></p>
+            <p>Lun-Vie 7:30-21:00 · Sáb 8:30-22:00 · Dom 9:00-20:00</p>
+            <a href="https://maps.app.goo.gl/XXXX" class="footer__info-link" target="_blank" rel="noopener noreferrer">📍 Ver en Maps →</a>
+          </address>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy; 2025 Café de la Esquina. Todos los derechos reservados.</p>
+      <p class="footer__badge">Hecho con ☕ por vecinos de Canillejas</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

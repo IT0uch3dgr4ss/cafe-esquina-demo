@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#E8DFD6"/>
+  <text x="200" y="140" font-family="Georgia, serif" font-size="24" fill="#9B8470" text-anchor="middle" dominant-baseline="middle">Café de la Esquina</text>
+  <text x="200" y="175" font-family="Georgia, serif" font-size="14" fill="#9B8470" text-anchor="middle" dominant-baseline="middle">Imagen placeholder</text>
+  <circle cx="200" cy="220" r="30" fill="none" stroke="#C49A6C" stroke-width="2"/>
+  <path d="M200 205v-15M190 215h20" stroke="#C49A6C" stroke-width="2" stroke-linecap="round"/>
+</svg>

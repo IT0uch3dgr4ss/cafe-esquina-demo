@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conoce Café de la Esquina: nuestra historia, el equipo, valores de barrio y galería de fotos reales. Café de especialidad en Canillejas, Madrid.">
+  <meta name="theme-color" content="#6B4226">
+  <title>Nosotros | Café de la Esquina</title>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cafe-esquina-demo.netlify.app/nosotros.html">
+  <meta property="og:title" content="Nosotros | Café de la Esquina">
+  <meta property="og:description" content="Nuestra historia, el equipo y valores de barrio. Café de especialidad en Canillejas.">
+  <meta property="og:image" content="https://cafe-esquina-demo.netlify.app/assets/images/og-nosotros.webp">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nosotros | Café de la Esquina">
+  <meta name="twitter:description" content="Nuestra historia, el equipo y valores de barrio.">
+
+  <!-- Fonts -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="page-nosotros">
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="header__inner container">
+      <a href="/" class="header__logo" aria-label="Café de la Esquina - Inicio">
+        <svg class="header__logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="14" stroke="#6B4226" stroke-width="2"/>
+          <path d="M16 6v10M16 16v10M11 16h10" stroke="#6B4226" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="header__logo-text">Café de la Esquina</span>
+      </a>
+
+      <nav class="header__nav" role="navigation" aria-label="Navegación principal">
+        <ul class="header__nav-list">
+          <li><a href="/" class="header__nav-link">Inicio</a></li>
+          <li><a href="/carta.html" class="header__nav-link">Carta</a></li>
+          <li><a href="/nosotros.html" class="header__nav-link" aria-current="page">Nosotros</a></li>
+          <li><a href="/contacto.html" class="header__nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="https://wa.me/34600000000?text=Hola%21%20Quiero%20hacer%20un%20pedido" class="btn btn--accent header__btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp: Pedir o reservar">
+          <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          <span>WhatsApp</span>
+        </a>
+        <button class="header__hamburger" aria-expanded="false" aria-controls="drawer" aria-label="Abrir menú">
+          <span class="header__hamburger-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menú móvil">
+    <div class="drawer__header">
+      <h2 class="drawer__title">Menú</h2>
+      <button class="drawer__close" aria-label="Cerrar menú"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+    </div>
+    <nav class="drawer__nav" role="navigation" aria-label="Navegación móvil">
+      <ul class="drawer__nav-list">
+        <li><a href="/" class="drawer__nav-link">Inicio</a></li>
+        <li><a href="/carta.html" class="drawer__nav-link">Carta</a></li>
+        <li><a href="/nosotros.html" class="drawer__nav-link" aria-current="page">Nosotros</a></li>
+        <li><a href="/contacto.html" class="drawer__nav-link">Contacto</a></li>
+      </ul>
+      <div class="drawer__info">
+        <div class="drawer__info-item"><svg class="drawer__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg><span>C/ Alcalá 123, 28022 Madrid (Canillejas)</span></div>
+        <div class="drawer__info-item"><svg class="drawer__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><span>Lun-Vie 7:30-21:00 · Sáb 8:30-22:00 · Dom 9:00-20:00</span></div>
+      </div>
+      <div class="drawer__actions">
+        <a href="https://wa.me/34600000000?text=Hola%21%20Quiero%20hacer%20un%20pedido" class="btn btn--accent btn--full" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg><span>Escribir por WhatsApp</span></a>
+        <a href="/carta.html" class="btn btn--outline btn--full">Ver carta completa</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main id="main" role="main">
+    <!-- About Hero -->
+    <section class="about-hero" aria-labelledby="about-hero-title">
+      <div class="about-hero__bg">
+        <img class="about-hero__image" src="assets/images/hero-about.webp" alt="Interior de Café de la Esquina con luz natural, mesas de madera y barra de café" loading="eager" width="1200" height="800" data-lqip="data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAQAAKfQsAAiACgBaJaQAA3GoKbYXmB4gAgKmYYA3QAB9d8MYxgAQ">
+      </div>
+      <div class="about-hero__overlay" aria-hidden="true"></div>
+      <div class="about-hero__content container">
+        <h1 class="about-hero__title text-h1" id="about-hero-title">De la esquina a tu taza</h1>
+        <p class="about-hero__text text-body-lg">Abiertos desde 2022 en Canillejas. Café de especialidad, pasteles caseros y la mejor compañía para tu pausa diaria.</p>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="about-story section" aria-labelledby="story-title">
+      <div class="container">
+        <div class="about-story__content">
+          <div class="about-story__text">
+            <h2 class="text-h2" id="story-title">Nuestra historia</h2>
+            <p>Todo empezó con una idea sencilla: querer tomar un café de verdad en el barrio. No de cápsulas, no de superautomática. Café de tueste natural, trazado desde la finca, preparado por baristas que saben lo que hacen.</p>
+            <p>Alquilamos este local en la esquina de Alcalá con Cervantes, nos manchamos las manos pintando paredes, y el 15 de marzo de 2022 abrimos la persiana por primera vez. Desde entonces, cada mañana a las 7:30 estamos aquí para vuestro primer café.</p>
+            <p>No somos una franquicia. Somos vecinos. Conocemos vuestros nombres, vuestros pedidos de memoria, y cuándo os hace falta un cortado doble porque la noche fue larga.</p>
+            <p><strong>Gracias por hacer de esta esquina vuestra pausa de cada día.</strong></p>
+          </div>
+          <figure class="about-story__image">
+            <img src="assets/images/story-owners.webp" alt="Los dueños detrás de la barra, sonriendo, con delantales de café" loading="lazy" width="600" height="600" data-lqip="data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAQAAKfQsAAiACgBaJaQAA3GoKbYXmB4gAgKmYYA3QAB9d8MYxgAQ">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team section" aria-labelledby="team-title">
+      <div class="container">
+        <header class="team__header">
+          <h2 class="team__title text-h2" id="team-title">El equipo</h2>
+          <p class="team__subtitle text-body-lg">Caras conocidas, manos expertas, corazones de barrio</p>
+        </header>
+        <div class="team__grid">
+          <article class="team-card">
+            <img class="team-card__image" src="assets/images/team-maria.webp" alt="María, dueña y barista jefe, sonriendo detrás de la barra" loading="lazy" width="300" height="300" data-lqip="data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAQAAKfQsAAiACgBaJaQAA3GoKbYXmB4gAgKmYYA3QAB9d8MYxgAQ">
+            <h3 class="team-card__name">María González</h3>
+            <p class="team-card__role">Dueña & Barista Jefe</p>
+            <p class="team-card__bio">SCA Certified. 10 años en café de especialidad. La que recuerda tu pedido antes de que pidas.</p>
+          </article>
+          <article class="team-card">
+            <img class="team-card__image" src="assets/images/team-carlos.webp" alt="Carlos, tostador y co-fundador, con sacos de café verde" loading="lazy" width="300" height="300" data-lqip="data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAQAAKfQsAAiACgBaJaQAA3GoKbYXmB4gAgKmYYA3QAB9d8MYxgAQ">
+            <h3 class="team-card__name">Carlos Ruiz</h3>
+            <p class="team-card__role">Tostador & Co-fundador</p>
+            <p class="team-card__bio">Tueste natural en micro-lotes. Busca el grano perfecto en origen. Si huele a café tostado, es él.</p>
+          </article>
+          <article class="team-card">
+            <img class="team-card__image" src="assets/images/team-lucia.webp" alt="Lucía, repostera, decorando una tarta de queso" loading="lazy" width="300" height="300" data-lqip="data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAQAAKfQsAAiACgBaJaQAA3GoKbYXmB4gAgKmYYA3QAB9d8MYxgAQ">
+            <h3 class="team-card__name">Lucía Martín</h3>
+            <p class="team-card__role">Repostera</p>
+            <p class="team-card__bio">Tarta de queso La Viña cada mañana. Croissants de mantequilla 24h. Si está dulce y casero, es suyo.</p>
+          </article>
+          <article class="team-card">
+            <img class="team-card__image" src="assets/images/team-david.webp" alt="David, barista, haciendo latte art en un flat white" loading="lazy" width="300" height="300" data-lqip="data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAQAAKfQsAAiACgBaJaQAA3GoKbYXmB4gAgKmYYA3QAB9d8MYxgAQ">
+            <h3 class="team-card__name">David Chen</h3>
+            <p class="team-card__role">Barista</p>
+            <p class="team-card__bio">Latte art nivel campeonato. Paciencia infinita. Pregúntale por el origen del grano de hoy.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="values section section--alt" aria-labelledby="values-title">
+      <div class="container">
+        <header class="section-header" style="text-align:center; max-width:700px; margin:0 auto var(--space-12);">
+          <h2 class="text-h2" id="values-title">Nuestros valores</h2>
+          <p class="text-body-lg">Lo que nos guía cada mañana al levantar la persiana</p>
+        </header>
+        <div class="features__grid">
+          <article class="feature">
+            <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+            <h3 class="feature__title">Café de especialidad honesto</h3>
+            <p class="feature__description">Tueste natural, grano trazado, precio justo al productor. Sin aromas artificiales, sin azúcar quemado.</p>
+          </article>
+          <article class="feature">
+            <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            <h3 class="feature__title">Producto local y de temporada</h3>
+            <p class="feature__description">Pan de horno de leña de Vallecas, leche de ganadería de la Sierra, fruta del mercado de Canillejas.</p>
+          </article>
+          <article class="feature">
+            <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+            <h3 class="feature__title">Hecho con tiempo</h3>
+            <p class="feature__description">Masa madre 24h, cold brew 18h, pasteles del día. Lo bueno no tiene prisa. Ni nosotros.</p>
+          </article>
+          <article class="feature">
+            <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            <h3 class="feature__title">Barrio, no franquicia</h3>
+            <p class="feature__description">Conocemos vuestros nombres. Celebramos vuestros logros. Aquí tenéis vuestra segunda sala de estar.</p>
+          </article>
+          <article class="feature">
+            <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <h3 class="feature__title">Sostenibilidad real</h3>
+            <p class="feature__description">Vasos compostables, descuento con tu taza, posos para huertos urbanos, residuo cero en cocina.</p>
+          </article>
+          <article class="feature">
+            <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            <h3 class="feature__title">Comunicación directa</h3>
+            <p class="feature__description">WhatsApp para pedidos, dudas, sugerencias. Contestamos nosotros, no un bot. 600 000 000.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery section" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-header" style="text-align:center; max-width:700px; margin:0 auto var(--space-12);">
+          <h2 class="text-h2" id="gallery-title">Galería real</h2>
+          <p class="text-body-lg">Fotos de verdad, sin filtros, hechas por nosotros y por clientes</p>
+        </header>
+        <div class="gallery__grid" role="list" aria-label="Fotos del local, café, detalles y gente">
+          <figure class="gallery__item" role="listitem">
+            <img src="assets/images/gallery-1.webp" alt="Barra de café con molinillos, máquina de espresso y granos en tarros" loading="lazy" width="400" height="300" data-lqip="data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAQAAKfQsAAiACgBaJaQAA3GoKbYXmB4gAgKmYYA3QAB9d8MYxgAQ">
+          </figure>
+          <figure class="gallery__item" role="listitem">
+            <img src="assets/images/gallery-2.webp" alt="Tarta de queso La Viña recién horneada, quemada por encima" loading="lazy" width="400" height="300" data-lqip="data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAQAAKfQsAAiACgBaJaQAA3GoKbYXmB4gAgKmYYA3QAB9d8MYxgAQ">
+          </figure>
+          <figure class="gallery__item" role="listitem">
+            <img src="assets/images/gallery-3.webp" alt="Interior del local: mesas de madera, luz natural, plantas" loading="lazy" width="400" height="300" data-lqip="data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAQAAKfQsAAiACgBaJaQAA3GoKbYXmB4gAgKmYYA3QAB9d8MYxgAQ">
+          </figure>
+          <figure class="gallery__item" role="listitem">
+            <img src="assets/images/gallery-4.webp" alt="Latte art en un flat white: roseta perfecta" loading="lazy" width="400" height="300" data-lqip="data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAQAAKfQsAAiACgBaJaQAA3GoKbYXmB4gAgKmYYA3QAB9d8MYxgAQ">
+          </figure>
+          <figure class="gallery__item" role="listitem">
+            <img src="assets/images/gallery-5.webp" alt="Croissants de mantequilla en bandeja, dorados y hojaldrados" loading="lazy" width="400" height="300" data-lqip="data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAQAAKfQsAAiACgBaJaQAA3GoKbYXmB4gAgKmYYA3QAB9d8MYxgAQ">
+          </figure>
+          <figure class="gallery__item" role="listitem">
+            <img src="assets/images/gallery-6.webp" alt="Clientes charlando en la terraza, buen rollo" loading="lazy" width="400" height="300" data-lqip="data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAQAAKfQsAAiACgBaJaQAA3GoKbYXmB4gAgKmYYA3QAB9d8MYxgAQ">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta section section--alt" aria-labelledby="cta-title">
+      <div class="container" style="text-align:center; max-width:600px;">
+        <h2 class="text-h2" id="cta-title">Ven a conocernos</h2>
+        <p class="text-body-lg" style="margin-bottom:var(--space-8);">La esquina de siempre, con el café de ahora. Te esperamos.</p>
+        <div class="flex gap-4 justify-center flex-wrap">
+          <a href="/carta.html" class="btn btn--primary btn--lg">Ver la carta</a>
+          <a href="https://wa.me/34600000000?text=Hola%21%20Quiero%20reservar%20mesa" class="btn btn--accent btn--lg" target="_blank" rel="noopener noreferrer">Reservar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Location Bar (Mobile) -->
+  <div class="location-bar location-bar--mobile" role="contentinfo" aria-label="Información de ubicación y contacto rápido">
+    <a href="https://maps.app.goo.gl/XXXX" class="location-bar__item" target="_blank" rel="noopener noreferrer" aria-label="Ver en Google Maps">
+      <svg class="location-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+      <span class="location-bar__label">Ubicación</span>
+      <span class="location-bar__text">Canillejas</span>
+    </a>
+    <div class="location-bar__item" id="location-status" aria-live="polite">
+      <svg class="location-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+      <span class="location-bar__label">Estado</span>
+      <span class="location-bar__status location-bar__status--open" id="location-status-text">Abierto ahora</span>
+    </div>
+    <a href="https://wa.me/34600000000?text=Hola%21%20Quiero%20hacer%20un%20pedido" class="location-bar__item location-bar__item--whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp: Pedir o reservar">
+      <svg class="location-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+      <span class="location-bar__label">WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__main container">
+      <div class="footer__brand">
+        <a href="/" class="footer__logo" aria-label="Café de la Esquina - Inicio">
+          <svg class="footer__logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="14" stroke="#6B4226" stroke-width="2"/><path d="M16 6v10M16 16v10M11 16h10" stroke="#6B4226" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="footer__logo-text">Café de la Esquina</span>
+        </a>
+        <p class="footer__tagline">Tu pausa de cada día en Canillejas. Café de especialidad, pasteles caseros y buen rollo.</p>
+        <div class="footer__social" role="list" aria-label="Redes sociales">
+          <a href="https://instagram.com/cafedelaesquina" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+          <a href="https://tiktok.com/@cafedelaesquina" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg class="footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 8.85V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v4.85M12 4v6M8 16v5a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-5"></path></svg></a>
+          <a href="https://maps.app.goo.gl/XXXX" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Google Maps"><svg class="footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a>
+        </div>
+      </div>
+
+      <div class="footer__columns">
+        <nav class="footer__column" aria-label="Enlaces principales">
+          <h3 class="footer__column-title">Enlaces</h3>
+          <ul class="footer__links">
+            <li><a href="/" class="footer__link">Inicio</a></li>
+            <li><a href="/carta.html" class="footer__link">Carta</a></li>
+            <li><a href="/nosotros.html" class="footer__link">Nosotros</a></li>
+            <li><a href="/contacto.html" class="footer__link">Contacto</a></li>
+            <li><a href="/blog.html" class="footer__link">Blog / Noticias</a></li>
+            <li><a href="/trabaja.html" class="footer__link">Trabaja con nosotros</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__column" aria-label="Información legal">
+          <h3 class="footer__column-title">Legal</h3>
+          <ul class="footer__links">
+            <li><a href="/aviso-legal.html" class="footer__link">Aviso legal</a></li>
+            <li><a href="/privacidad.html" class="footer__link">Privacidad</a></li>
+            <li><a href="/cookies.html" class="footer__link">Cookies</a></li>
+            <li><a href="/accesibilidad.html" class="footer__link">Accesibilidad</a></li>
+            <li><a href="/hoja-reclamaciones.html" class="footer__link">Hoja de reclamaciones</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__column">
+          <h3 class="footer__column-title">Ven a vernos</h3>
+          <address class="footer__info" style="font-style: normal;">
+            <p>C/ Alcalá 123, 28022 Madrid (Canillejas)</p>
+            <p><a href="tel:+34600000000" class="footer__info-link">📞 +34 600 000 000</a></p>
+            <p><a href="mailto:hola@cafedelaesquina.es" class="footer__info-link">✉️ hola@cafedelaesquina.es</a></p>
+            <p>Lun-Vie 7:30-21:00 · Sáb 8:30-22:00 · Dom 9:00-20:00</p>
+            <a href="https://maps.app.goo.gl/XXXX" class="footer__info-link" target="_blank" rel="noopener noreferrer">📍 Ver en Maps →</a>
+          </address>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy; 2025 Café de la Esquina. Todos los derechos reservados.</p>
+      <p class="footer__badge">Hecho con ☕ por vecinos de Canillejas</p>
+    </div>
+  </footer>
+
+  <!-- Cart -->
+  <aside class="cart" id="cart" role="dialog" aria-modal="true" aria-label="Tu pedido" hidden>
+    <div class="cart__header">
+      <h2 class="cart__title">Tu pedido</h2>
+      <button class="cart__close" aria-label="Cerrar carrito"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+    </div>
+    <div class="cart__empty">Tu carrito está vacío... pero la barra te espera ☕</div>
+    <div class="cart__items" role="list" aria-label="Items del pedido"></div>
+    <div class="cart__summary hidden">
+      <div class="cart__total"><span class="cart__total-label">Total</span><span class="cart__total-amount text-price">0,00&nbsp;€</span></div>
+      <div class="cart__actions">
+        <button class="btn btn--accent btn--full btn--lg" id="cart-whatsapp">Pedir por WhatsApp</button>
+        <button class="btn btn--ghost btn--full" id="cart-clear">Vaciar carrito</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Scripts -->
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
