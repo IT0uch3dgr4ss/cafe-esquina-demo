@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FDF8F3"/><stop offset="100%" stop-color="#E8DFD6"/></linearGradient></defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <rect x="100" y="120" width="200" height="100" rx="8" fill="#D4A574"/>
+  <ellipse cx="150" cy="150" rx="25" ry="15" fill="#B85C3D" opacity="0.8"/>
+  <ellipse cx="250" cy="150" rx="25" ry="15" fill="#B85C3D" opacity="0.8"/>
+  <ellipse cx="200" cy="140" rx="30" ry="18" fill="#B85C3D" opacity="0.9"/>
+  <text x="200" y="250" font-family="Fraunces,Georgia,serif" font-size="22" fill="#6B4226" text-anchor="middle">🍞 Tostada Tomate</text>
+</svg>

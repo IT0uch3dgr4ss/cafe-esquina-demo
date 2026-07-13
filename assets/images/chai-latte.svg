@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FDF8F3"/><stop offset="100%" stop-color="#E8DFD6"/></linearGradient></defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <path d="M150 230 L145 80 L190 75 L195 230 Z" fill="#A67D52"/>
+  <ellipse cx="170" cy="75" rx="25" ry="8" fill="#FDF8F3" opacity="0.5"/>
+  <path d="M155 85 Q170 65 185 85" stroke="#C49A6C" stroke-width="2" fill="none"/>
+  <text x="200" y="260" font-family="Fraunces,Georgia,serif" font-size="22" fill="#6B4226" text-anchor="middle">🍵 Chai Latte</text>
+</svg>

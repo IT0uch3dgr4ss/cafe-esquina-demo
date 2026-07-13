@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FDF8F3"/><stop offset="100%" stop-color="#E8DFD6"/></linearGradient></defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <path d="M150 230 L145 80 L190 75 L195 230 Z" fill="#5D8AA8"/>
+  <ellipse cx="170" cy="75" rx="25" ry="8" fill="#8FBC8F" opacity="0.5"/>
+  <text x="200" y="260" font-family="Fraunces,Georgia,serif" font-size="22" fill="#6B4226" text-anchor="middle">🍵 Matcha Latte</text>
+</svg>

@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FDF8F3"/>
+      <stop offset="100%" style="stop-color:#FAF5F0"/>
+    </linearGradient>
+    <linearGradient id="woodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B6914"/>
+      <stop offset="50%" style="stop-color:#6B4226"/>
+      <stop offset="100%" style="stop-color:#54331D"/>
+    </linearGradient>
+    <linearGradient id="lightGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF8E7;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#FDF8F3;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGrad)"/>
+  
+  <!-- Window light rays -->
+  <g opacity="0.3">
+    <polygon points="0,0 1200,0 900,800 0,800" fill="url(#lightGrad)"/>
+    <polygon points="200,0 1200,0 1200,800 100,800" fill="url(#lightGrad)" transform="translate(100,0)"/>
+  </g>
+  
+  <!-- Floor -->
+  <rect x="0" y="600" width="1200" height="200" fill="url(#woodGrad)" opacity="0.4"/>
+  
+  <!-- Tables and chairs (simplified) -->
+  <g fill="#6B4226" opacity="0.7">
+    <!-- Table 1 -->
+    <ellipse cx="200" cy="700" rx="80" ry="15"/>
+    <rect x="185" y="700" width="30" height="120" rx="3"/>
+    <ellipse cx="200" cy="820" rx="15" ry="5"/>
+    <!-- Chair 1 -->
+    <rect x="120" y="740" width="50" height="80" rx="5"/>
+    <rect x="115" y="730" width="60" height="15" rx="3"/>
+    <rect x="125" y="785" width="40" height="15" rx="3"/>
+    
+    <!-- Table 2 -->
+    <ellipse cx="450" cy="680" rx="90" ry="18"/>
+    <rect x="435" y="680" width="30" height="140" rx="3"/>
+    <ellipse cx="450" cy="820" rx="15" ry="5"/>
+    <!-- Chairs -->
+    <rect x="340" y="750" width="50" height="80" rx="5"/>
+    <rect x="335" y="740" width="60" height="15" rx="3"/>
+    <rect x="345" y="795" width="40" height="15" rx="3"/>
+    <rect x="560" y="750" width="50" height="80" rx="5"/>
+    <rect x="555" y="740" width="60" height="15" rx="3"/>
+    <rect x="565" y="795" width="40" height="15" rx="3"/>
+    
+    <!-- Table 3 -->
+    <ellipse cx="750" cy="710" rx="70" ry="14"/>
+    <rect x="735" y="710" width="30" height="110" rx="3"/>
+    <ellipse cx="750" cy="820" rx="15" ry="5"/>
+    <rect x="670" y="750" width="50" height="80" rx="5"/>
+    <rect x="665" y="740" width="60" height="15" rx="3"/>
+    <rect x="675" y="795" width="40" height="15" rx="3"/>
+    
+    <!-- Table 4 -->
+    <ellipse cx="950" cy="690" rx="80" ry="16"/>
+    <rect x="935" y="690" width="30" height="130" rx="3"/>
+    <ellipse cx="950" cy="820" rx="15" ry="5"/>
+    <rect x="860" y="750" width="50" height="80" rx="5"/>
+    <rect x="855" y="740" width="60" height="15" rx="3"/>
+    <rect x="865" y="795" width="40" height="15" rx="3"/>
+  </g>
+  
+  <!-- Coffee bar background -->
+  <rect x="850" y="200" width="320" height="400" fill="#4A3520" opacity="0.3" rx="10"/>
+  <rect x="870" y="220" width="280" height="60" fill="#D4A574" opacity="0.4" rx="5"/>
+  <text x="1010" y="260" font-family="Georgia,serif" font-size="20" fill="#D4A574" text-anchor="middle" opacity="0.6">☕ BAR</text>
+  
+  <!-- Espresso machine silhouette -->
+  <g fill="#2D1B0E" opacity="0.5" transform="translate(900, 350)">
+    <rect x="0" y="0" width="120" height="200" rx="5"/>
+    <rect x="20" y="-40" width="80" height="40" rx="5"/>
+    <circle cx="60" cy="-20" r="15" fill="#C49A6C" opacity="0.6"/>
+    <rect x="50" y="200" width="20" height="30" rx="2"/>
+  </g>
+  
+  <!-- Display case -->
+  <g fill="#6B4226" opacity="0.4" transform="translate(870, 500)">
+    <rect x="0" y="0" width="260" height="80" rx="5"/>
+    <circle cx="50" cy="40" r="25" fill="#D4A574" opacity="0.5"/>
+    <circle cx="130" cy="40" r="25" fill="#F5E6D3" opacity="0.5"/>
+    <circle cx="210" cy="40" r="25" fill="#E8C5A0" opacity="0.5"/>
+  </g>
+  
+  <!-- Plants -->
+  <g transform="translate(100, 200)">
+    <ellipse cx="0" cy="0" rx="40" ry="80" fill="#4A7C59" opacity="0.3"/>
+    <ellipse cx="20" cy="-20" rx="25" ry="50" fill="#4A7C59" opacity="0.4"/>
+  </g>
+  <g transform="translate(1100, 150)">
+    <ellipse cx="0" cy="0" rx="35" ry="70" fill="#4A7C59" opacity="0.3"/>
+    <ellipse cx="15" cy="-15" rx="20" ry="40" fill="#4A7C59" opacity="0.4"/>
+  </g>
+  
+  <!-- Wall art / chalkboard -->
+  <rect x="100" y="150" width="180" height="200" fill="#2D1B0E" opacity="0.2" rx="5"/>
+  <text x="190" y="220" font-family="cursive" font-size="18" fill="#D4A574" text-anchor="middle" opacity="0.5">MENÚ</text>
+  <text x="190" y="260" font-family="cursive" font-size="14" fill="#D4A574" text-anchor="middle" opacity="0.4">☕ Café solo 1.50€</text>
+  <text x="190" y="285" font-family="cursive" font-size="14" fill="#D4A574" text-anchor="middle" opacity="0.4">☕ Cortado 1.70€</text>
+  <text x="190" y="310" font-family="cursive" font-size="14" fill="#D4A574" text-anchor="middle" opacity="0.4">🥐 Croissant 2.20€</text>
+  <text x="190" y="335" font-family="cursive" font-size="14" fill="#D4A574" text-anchor="middle" opacity="0.4">🍰 Tarta día 3.50€</text>
+  
+  <!-- Text overlay hint -->
+  <text x="600" y="100" font-family="Fraunces,Georgia,serif" font-size="48" font-weight="700" fill="#6B4226" text-anchor="middle" opacity="0.15">Café de la Esquina</text>
+  <text x="600" y="150" font-family="DM Sans,sans-serif" font-size="20" fill="#9B8470" text-anchor="middle" opacity="0">Tu pausa de cada día</text>
+</svg>

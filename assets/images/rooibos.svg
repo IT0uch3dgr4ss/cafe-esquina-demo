@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FDF8F3"/><stop offset="100%" stop-color="#E8DFD6"/></linearGradient></defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <path d="M140 230 L135 80 L165 75 L170 230 Z" fill="#B85C3D"/>
+  <ellipse cx="150" cy="75" rx="18" ry="6" fill="#FDF8F3" opacity="0.3"/>
+  <text x="200" y="260" font-family="Fraunces,Georgia,serif" font-size="22" fill="#6B4226" text-anchor="middle">🍵 Rooibos</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FDF8F3"/><stop offset="100%" stop-color="#E8DFD6"/></linearGradient></defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <rect x="150" y="80" width="100" height="180" rx="5" fill="#2D1B0E"/>
+  <rect x="152" y="82" width="96" height="80" rx="4" fill="#8B5A2B"/>
+  <rect x="152" y="162" width="96" height="100" rx="4" fill="#FDF8F3" opacity="0.6"/>
+  <ellipse cx="200" cy="75" rx="55" ry="10" fill="#2D1B0E"/>
+  <text x="200" y="280" font-family="Fraunces,Georgia,serif" font-size="22" fill="#6B4226" text-anchor="middle">☕ Cortado</text>
+</svg>

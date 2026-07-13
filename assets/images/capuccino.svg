@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FDF8F3"/><stop offset="100%" stop-color="#E8DFD6"/></linearGradient></defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <path d="M130 230 L120 70 L180 60 L190 230 Z" fill="#4A3525"/>
+  <ellipse cx="160" cy="65" rx="35" ry="12" fill="#FDF8F3" opacity="0.8"/>
+  <ellipse cx="160" cy="65" rx="30" ry="10" fill="#D4A574" opacity="0.5"/>
+  <path d="M140 65 Q160 45 180 65" stroke="#C49A6C" stroke-width="3" fill="none"/>
+  <text x="200" y="270" font-family="Fraunces,Georgia,serif" font-size="22" fill="#6B4226" text-anchor="middle">☕ Cappuccino</text>
+</svg>
