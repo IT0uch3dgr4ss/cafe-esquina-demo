@@ -69,7 +69,7 @@
   --color-badge-vegan: var(--color-success);
   --color-badge-gf: var(--color-info);
 
-  --color-overlay-gradient: linear-gradient(180deg, rgba(45,27,14,0) 0%, rgba(45,27,14,0.6) 100%);
+  --color-overlay-gradient: linear-gradient(180deg, rgba(45,27,14,0) 0%, rgba(45,27,14,0.25) 100%);
   --color-scrim: rgba(45, 27, 14, 0.4);
 
   /* Typography */
