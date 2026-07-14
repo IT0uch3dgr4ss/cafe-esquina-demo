@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FDF8F3"/><stop offset="100%" stop-color="#E8DFD6"/></linearGradient></defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <path d="M140 240 L135 70 L180 65 L185 240 Z" fill="#4A3525" opacity="0.8"/>
+  <rect x="137" y="67" width="46" height="173" fill="#D4A574" opacity="0.6"/>
+  <ellipse cx="160" cy="60" rx="25" ry="10" fill="#FDF8F3" opacity="0.7"/>
+  <circle cx="155" cy="100" r="8" fill="white" opacity="0.9"/>
+  <circle cx="165" cy="120" r="6" fill="white" opacity="0.8"/>
+  <circle cx="160" cy="140" r="5" fill="white" opacity="0.9"/>
+  <text x="200" y="270" font-family="Fraunces,Georgia,serif" font-size="22" fill="#6B4226" text-anchor="middle">🧊 Frappé</text>
+</svg>

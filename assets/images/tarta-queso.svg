@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FDF8F3"/><stop offset="100%" stop-color="#E8DFD6"/></linearGradient></defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <path d="M120 200 L110 120 Q140 100 200 100 Q260 100 290 120 L280 200 Z" fill="#F5E6D3"/>
+  <ellipse cx="200" cy="95" rx="80" ry="20" fill="#FDF8F3" opacity="0.5"/>
+  <path d="M130 180 Q160 140 200 140 Q240 140 270 180" fill="none" stroke="#D4A574" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="200" cy="180" rx="50" ry="10" fill="#FFD700" opacity="0.3"/>
+  <text x="200" y="240" font-family="Fraunces,Georgia,serif" font-size="22" fill="#6B4226" text-anchor="middle">🍰 Tarta Queso</text>
+</svg>

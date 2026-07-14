@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FDF8F3"/><stop offset="100%" stop-color="#E8DFD6"/></linearGradient></defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <ellipse cx="200" cy="160" rx="100" ry="50" fill="#8FBC8F" opacity="0.3"/>
+  <circle cx="150" cy="140" r="25" fill="#4A7C59" opacity="0.6"/>
+  <circle cx="240" cy="135" r="20" fill="#B85C3D" opacity="0.6"/>
+  <circle cx="180" cy="180" r="18" fill="#F5E6D3" opacity="0.8"/>
+  <circle cx="220" cy="170" r="15" fill="#FFD700" opacity="0.7"/>
+  <ellipse cx="200" cy="150" rx="80" ry="35" fill="#4A7C59" opacity="0.4"/>
+  <text x="200" y="250" font-family="Fraunces,Georgia,serif" font-size="22" fill="#6B4226" text-anchor="middle">🥗 Ensalada Día</text>
+</svg>

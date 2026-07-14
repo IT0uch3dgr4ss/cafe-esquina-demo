@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FDF8F3"/><stop offset="100%" stop-color="#E8DFD6"/></linearGradient></defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <path d="M150 240 L145 70 L185 65 L190 240 Z" fill="#FFD700" opacity="0.8"/>
+  <rect x="147" y="72" width="38" height="168" fill="#FFA500" opacity="0.3"/>
+  <ellipse cx="175" cy="120" rx="8" ry="4" fill="#FFD700" opacity="0.5"/>
+  <text x="200" y="270" font-family="Fraunces,Georgia,serif" font-size="22" fill="#6B4226" text-anchor="middle">🧊 Té Helado</text>
+</svg>

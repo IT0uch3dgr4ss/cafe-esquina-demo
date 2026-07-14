@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FDF8F3"/><stop offset="100%" stop-color="#E8DFD6"/></linearGradient></defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <circle cx="200" cy="140" r="65" fill="#C49A6C"/>
+  <circle cx="170" cy="120" r="12" fill="#B85C3D" opacity="0.8"/>
+  <circle cx="220" cy="115" r="10" fill="#B85C3D" opacity="0.7"/>
+  <circle cx="230" cy="150" r="14" fill="#B85C3D" opacity="0.6"/>
+  <circle cx="165" cy="160" r="11" fill="#B85C3D" opacity="0.7"/>
+  <circle cx="210" cy="170" r="9" fill="#B85C3D" opacity="0.6"/>
+  <circle cx="155" cy="145" r="8" fill="#B85C3D" opacity="0.5"/>
+  <text x="200" y="240" font-family="Fraunces,Georgia,serif" font-size="22" fill="#6B4226" text-anchor="middle">🍪 Cookie Casero</text>
+</svg>
